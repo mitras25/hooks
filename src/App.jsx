@@ -1,10 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import "./App.css";
+import Content from "./components/Content";
+import Menu from "./components/Menu";
 
 function App() {
-  return (
-  <><h1>ja to no Github</h1></>
-  );
+    return (
+        <>
+            <Menu />
+            <Content />
+        </>
+    );
 }
 
 export default App;
