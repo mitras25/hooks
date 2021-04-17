@@ -3,7 +3,7 @@ import React from 'react'
 
 function App() {
   return (
-  <><h1>funcionando</h1></>
+  <><h1>ja to no Github</h1></>
   );
 }
 
