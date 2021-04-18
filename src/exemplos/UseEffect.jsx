@@ -8,17 +8,15 @@ export default (props) => {
     const [texto, setTexto] = useState("inicial");
     const [count, setCount] = useState(1);
     const [verifica, setVerifica] = useState("me chamou");
-    const [status, setStatus]  = useState('impar')
+    const [status, setStatus] = useState("impar");
 
     useEffect(() => {
         setVerifica(`Reindelizou ${count} vezes`);
-    } ,[count]
-    );
+    }, [count]);
 
-    useEffect(
-        ()=>{
-setStatus( count % 2 === 0 ? 'par' : 'impar')
-        }, [count])
+    useEffect(() => {
+        setStatus(count % 2 === 0 ? "par" : "impar");
+    }, [count]);
 
     return (
         <>
@@ -35,9 +33,8 @@ setStatus( count % 2 === 0 ? 'par' : 'impar')
                 >
                     Troca
                 </button>
-                    <p>estado Verifica:{verifica}</p>
-                    <p>Status de count: {status}</p>
-
+                <p>estado Verifica:{verifica}</p>
+                <p>Status de count: {status}</p>
             </div>
         </>
     );

@@ -44,21 +44,23 @@ export default (props) => {
             <SectionTitle title="Exercicio 01" />
             <div className="center">
                 <p>{state}</p>
-                <button onClick={() => dispatch("add")}>ADD</button>
-                <button onClick={() => dispatch("dec")}>DEC</button>
-                <button onClick={() => dispatch("")}>CLEAR</button>
+                <div>
+                    <button onClick={() => dispatch("add")}>ADD</button>
+                    <button onClick={() => dispatch("dec")}>DEC</button>
+                    <button onClick={() => dispatch("")}>CLEAR</button>
+                </div>
             </div>
 
             <SectionTitle title="Exercicio 02" />
             <div className="center">
                 <p>{desconto.nome}</p>
                 <p>{desconto.preco}</p>
-                <button onClick={() => dispach2("10")}>10% Desconto</button>
-                <button onClick={() => dispach2("25")}>25% Desconto</button>
-                <button onClick={() => dispach2("")}>cancela</button>
+                <div>
+                    <button onClick={() => dispach2("10")}>10% Desconto</button>
+                    <button onClick={() => dispach2("25")}>25% Desconto</button>
+                    <button onClick={() => dispach2("")}>cancela</button>
+                </div>
             </div>
-
-       
         </>
     );
 };

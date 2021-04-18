@@ -8,10 +8,10 @@ export default (props) => {
     const [dados, setDados] = useState({
         nome: "",
         email: "",
-        password:''
+        password: "",
     });
 
-    const[confirm, setConfirm]= useState('')
+    const [confirm, setConfirm] = useState("");
 
     const handleInputChange = (e) => {
         setDados({
@@ -21,7 +21,7 @@ export default (props) => {
     };
 
     function enviarDados(event) {
-        setConfirm(`Dados Enviados! ${dados.nome} email: ${dados.email} `)
+        setConfirm(`Dados Enviados! ${dados.nome} email: ${dados.email} `);
         event.prevent.Default();
     }
 
@@ -43,9 +43,10 @@ export default (props) => {
                         placeholder="email"
                         onChange={handleInputChange}
                     />
-                     <input
+                    <input
                         type="password"
-                        name="password"                        placeholder="senha"
+                        name="password"
+                        placeholder="senha"
                         onChange={handleInputChange}
                     />
                     <br />
