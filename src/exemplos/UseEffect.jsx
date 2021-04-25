@@ -20,7 +20,7 @@ export default (props) => {
 
     return (
         <>
-            <PageTitle title="useEffect" subtitle="Executa efeitos" />
+            <PageTitle title="useEffect" subtitle="Evita efeitos colaterais" />
             <SectionTitle title="Exemplo" />
             <div className="center">
                 <p>Texto: {texto}</p>

@@ -26,9 +26,8 @@ export default (props) => {
                 <p>Texto: {texto}</p>
                 <p>valor de refTexto: {refTexto.current}</p>
             </div>
-
-
-            <SectionTitle title="Exemplo 01" />
+            
+            <SectionTitle title="Exemplo 02" />
             <div className="center">
                 <input name='nome' ref={inputRef} />
                 <button onClick={foco}>Clica</button>              
